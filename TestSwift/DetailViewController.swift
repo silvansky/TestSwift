@@ -22,4 +22,9 @@ class DetailViewController: UIViewController {
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
+
+	override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+		var mvc : MoreViewController! = segue.destinationViewController as MoreViewController
+		mvc.text = self.text;
+	}
 }
