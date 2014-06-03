@@ -8,6 +8,8 @@
 
 #import "MoreViewController.h"
 
+#import "TestSwift-Swift.h"
+
 @interface MoreViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *textLabel;
@@ -20,6 +22,8 @@
 {
 	[super viewDidLoad];
 	self.textLabel.text = self.text;
+	ViewController *root = self.navigationController.viewControllers[0];
+	NSLog(@"Root data: %@", [root dataDescription]);
 }
 
 - (void)didReceiveMemoryWarning

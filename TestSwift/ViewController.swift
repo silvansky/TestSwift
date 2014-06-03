@@ -26,6 +26,10 @@ class ViewController: UITableViewController {
 		vc.text = self.data[sender as Int].0
 	}
 
+	@objc func dataDescription() -> String {
+		return "Data: \(self.data)"
+	}
+
 	// - UITableViewDataSource
 
 	override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
