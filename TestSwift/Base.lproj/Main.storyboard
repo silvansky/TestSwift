@@ -122,6 +122,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="detailLabel" destination="wGg-bb-Eqd" id="dfA-wa-TQX"/>
                         <outlet property="textLabel" destination="MEQ-bS-YSJ" id="wwV-aS-hJ9"/>
                     </connections>
                 </viewController>

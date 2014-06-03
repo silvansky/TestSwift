@@ -13,6 +13,7 @@
 @interface MoreViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *textLabel;
+@property (nonatomic, weak) IBOutlet UILabel *detailLabel;
 
 @end
 
@@ -23,7 +24,7 @@
 	[super viewDidLoad];
 	self.textLabel.text = self.text;
 	ViewController *root = self.navigationController.viewControllers[0];
-	NSLog(@"Root data: %@", [root dataDescription]);
+	self.detailLabel.text = [NSString stringWithFormat:@"Root data: %@", [root dataDescription]];
 }
 
 - (void)didReceiveMemoryWarning
