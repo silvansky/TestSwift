@@ -13,7 +13,7 @@ class ViewController: UITableViewController {
 	var data : Array<(String, String)>!
 
 	override func viewDidLoad() {
-		self.data = [ ("Meet", "Tasty"), ("Cheese", "Not bad"), ("Salad", "Boooooo")];
+		self.data = [ ("Meat", "Tasty"), ("Cheese", "Not bad"), ("Salad", "Boooooo")];
 		super.viewDidLoad()
 	}
 
