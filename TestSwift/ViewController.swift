@@ -21,8 +21,8 @@ class ViewController: UITableViewController {
 		super.didReceiveMemoryWarning()
 	}
 
-	override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-		var vc : DetailViewController! = segue.destinationViewController as DetailViewController
+	override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject!) {
+		var vc : DetailViewController! = segue?.destinationViewController as DetailViewController
 		vc.text = self.data[sender as Int].0
 	}
 
@@ -32,21 +32,21 @@ class ViewController: UITableViewController {
 
 	// - UITableViewDataSource
 
-	override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+	override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
 		return self.data.count
 	}
 
-	override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-		cell.textLabel.text = self.data[indexPath.row].0
-		cell.detailTextLabel.text = self.data[indexPath.row].1
+		cell.textLabel?.text = self.data[indexPath.row].0
+		cell.detailTextLabel?.text = self.data[indexPath.row].1
 		return cell;
 	}
 
 	// - UITableViewDelegate
 
-	override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-		tableView.deselectRowAtIndexPath(indexPath, animated: true)
+	override func tableView(tableView: UITableView?, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		tableView?.deselectRowAtIndexPath(indexPath, animated: true)
 		self.performSegueWithIdentifier("detail", sender: indexPath.row)
 	}
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dH1-nW-Hbd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dH1-nW-Hbd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Choose your option-->
+        <!--Choose your option-->
         <scene sceneID="uLU-YK-oWv">
             <objects>
                 <tableViewController id="uTf-57-zAh" customClass="ViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="cj2-fj-NXZ" detailTextLabel="ENX-7P-C2L" style="IBUITableViewCellStyleSubtitle" id="Mle-ik-LNz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="cj2-fj-NXZ" detailTextLabel="ENX-7P-C2L" style="IBUITableViewCellStyleSubtitle" id="Mle-ik-LNz">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mle-ik-LNz" id="UXF-cX-vef">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -41,7 +42,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Choose your option" id="b3X-3J-epd"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <connections>
                         <segue destination="2cI-pZ-Ksm" kind="show" identifier="detail" id="zsX-0D-3vr"/>
                     </connections>
@@ -50,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="262" y="-205"/>
         </scene>
-        <!--Detail View Controller - Good choice!-->
+        <!--Good choice!-->
         <scene sceneID="QHC-9L-qVt">
             <objects>
                 <viewController id="2cI-pZ-Ksm" customClass="DetailViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,7 +86,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Good choice!" id="sAF-yj-X3Z"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <connections>
                         <outlet property="textLabel" destination="cUy-bU-qt6" id="g2S-iy-9qW"/>
                     </connections>
@@ -91,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="707" y="-205"/>
         </scene>
-        <!--More View Controller - Want more?-->
+        <!--Want more?-->
         <scene sceneID="0zR-Sa-Jzq">
             <objects>
                 <viewController id="XUA-yH-5Zs" customClass="MoreViewController" sceneMemberID="viewController">
@@ -120,7 +127,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Want more?" id="2cX-Td-iQC"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <connections>
                         <outlet property="detailLabel" destination="wGg-bb-Eqd" id="dfA-wa-TQX"/>
                         <outlet property="textLabel" destination="MEQ-bS-YSJ" id="wwV-aS-hJ9"/>
@@ -135,7 +145,10 @@
             <objects>
                 <navigationController id="dH1-nW-Hbd" sceneMemberID="viewController">
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9n-Zj-rE1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
